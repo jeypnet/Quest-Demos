@@ -52,3 +52,45 @@ export interface Dashboard1Props {
 };
 
 
+
+export interface ProductCard1Props {
+  className?: any;
+  prop1: any;
+};
+
+export interface ProductCard1Props {
+  className?: any;
+};
+
+
+
+
+
+
+export interface Dashboard1Props {
+  className?: any;
+  prop1: any;
+};
+
+
+
+export interface ProductCard1Props {
+  className?: any;
+  prop1: any;
+};
+
+export interface ProductCard1Props {
+  className?: any;
+};
+
+
+
+
+
+
+export interface Dashboard1Props {
+  className?: any;
+  prop1: any;
+};
+
+
