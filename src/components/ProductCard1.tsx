@@ -14,7 +14,7 @@
 
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import PicImage from './assets/images/pic.png';
+import PicImage from './assets/images/ProductCard1_pic.png';
 import { ProductCard1Props } from './types';
 import useProductCard1 from './useProductCard1';
  
@@ -26,7 +26,7 @@ const TypeQuest: any = styled("div")({
   position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `column`,  
-  width: `417px`,  
+  width: "100%",  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
   padding: `0px`,  
@@ -122,7 +122,7 @@ const ButtonContained: any = styled(Button)({
 });
  
 function ProductCard1(props: ProductCard1Props): JSX.Element {
-  const {data, fns} = useProductCard1();
+  const {data} = useProductCard1();
   return (
     <TypeQuest className={props.className} >
       <Pic >
@@ -134,10 +134,10 @@ function ProductCard1(props: ProductCard1Props): JSX.Element {
               {`Non-selfie camera`}
                 </Product>
             <Price >
-              {data.getPrice()}
+              {data.price}
                 </Price>
           </Text>
-          <ButtonContained variant="contained" size="large" color="primary"  onClick={fns.handleClick()}  > Buy Now </ButtonContained>
+          <ButtonContained variant="contained" size="large" color="primary"    > Buy Now </ButtonContained>
         </AboutProduct>
       </About>
     </TypeQuest>
