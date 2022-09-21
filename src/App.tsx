@@ -1,9 +1,9 @@
 import React from "react";
-import AccordianDemo from "./components/AccordianDemo";
+import Product1 from "./components/Product1";
 
 function App() {
   return <div className="App">
-    <AccordianDemo />
+    <Product1 />
   </div>;
 }
 
