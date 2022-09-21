@@ -124,7 +124,7 @@ const ButtonContained: any = styled(Button)({
 function ProductCard1(props: ProductCard1Props): JSX.Element {
   const {data, fns} = useProductCard1();
   return (
-    <TypeQuest className={props.className} >
+    <TypeQuest >
       <Pic >
       </Pic>
       <About >

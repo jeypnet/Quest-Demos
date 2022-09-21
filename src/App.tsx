@@ -1,9 +1,9 @@
 import React from "react";
-import Product1 from "./components/Product1";
+import ProductCard1 from "./components/ProductCard1";
 
 function App() {
-  return <div className="App">
-    <Product1 />
+  return <div className="App" style={{backgroundColor:"red",height:300,width:300}} >
+    <ProductCard1 prop1={"price"} />
   </div>;
 }
 
