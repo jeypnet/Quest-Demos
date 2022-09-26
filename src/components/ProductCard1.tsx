@@ -12,7 +12,7 @@
 *
 **********************************************************************/
 
-import { Button } from '@mui/material';
+import { Tooltip, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { ProductCard1Props } from './types';
 import useProductCard1 from './useProductCard1';
@@ -125,9 +125,11 @@ function ProductCard1(props: ProductCard1Props): JSX.Element {
       <About >
         <AboutProduct >
           <Text >
-            <Product >
-              {`Your Text Goes Here`}
-                </Product>
+            <Tooltip arrow={true} placement={"top"}  title={"Product Text"}>
+              <Product >
+                {`Your Text Goes Here`}
+                  </Product>
+            </Tooltip>
             <Price >
               {data.price}
                 </Price>
