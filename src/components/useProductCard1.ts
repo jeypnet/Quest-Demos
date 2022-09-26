@@ -11,7 +11,7 @@
 **********************************************************************/
 
 const useProductCard1 = () => {
-  let data: any = {};
+  let data: any = {price:"$3333.333"};
   const handleClick = (): any => {};
 
   let fns: any = {handleClick};

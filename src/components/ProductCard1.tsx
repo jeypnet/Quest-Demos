@@ -14,7 +14,6 @@
 
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import PicImage from './assets/images/ProductCard1_pic.png';
 import { ProductCard1Props } from './types';
 import useProductCard1 from './useProductCard1';
  
@@ -34,19 +33,10 @@ const TypeQuest: any = styled("div")({
   overflow: `hidden`,  
 });
   
-const Pic: any = styled("div")({  
-  backgroundImage: `url(${PicImage})`,  
-  backgroundPosition: `center`,  
-  backgroundSize: `cover`,  
-  backgroundRepeat: `no-repeat`,  
-  display: `flex`,  
-  position: `relative`,  
-  isolation: `isolate`,  
-  flexDirection: `row`,  
-  justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
-  alignSelf: `stretch`,  
-  height: `480px`,  
+const Q30001: any = styled("img")({  
+  height: `417px`,  
+  width: `417px`,  
+  objectFit: `cover`,  
   margin: `0px`,  
 });
   
@@ -124,14 +114,19 @@ const ButtonContained: any = styled(Button)({
 function ProductCard1(props: ProductCard1Props): JSX.Element {
   const {data} = useProductCard1();
   return (
+<<<<<<< HEAD
     <TypeQuest >
       <Pic >
       </Pic>
+=======
+    <TypeQuest className={props.className} >
+      <Q30001  src={props.image} alt={"3000 1"}/>
+>>>>>>> b234d6a5f977037c49a21694f782313316575de2
       <About >
         <AboutProduct >
           <Text >
             <Product >
-              {`Non-selfie camera`}
+              {`Your Text Goes Here`}
                 </Product>
             <Price >
               {data.price}
